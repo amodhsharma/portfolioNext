@@ -1,165 +1,80 @@
-.page {
-  --gray-rgb: 0, 0, 0;
-  --gray-alpha-200: rgba(var(--gray-rgb), 0.08);
-  --gray-alpha-100: rgba(var(--gray-rgb), 0.05);
-
-  --button-primary-hover: #383838;
-  --button-secondary-hover: #f2f2f2;
-
-  display: grid;
-  grid-template-rows: 20px 1fr 20px;
-  align-items: center;
-  justify-items: center;
-  min-height: 100svh;
-  padding: 80px;
-  gap: 64px;
-  font-family: var(--font-geist-sans);
+.html{
+  font-size: 16px;  /*hor helping inrem value*/
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  .page {
-    --gray-rgb: 255, 255, 255;
-    --gray-alpha-200: rgba(var(--gray-rgb), 0.145);
-    --gray-alpha-100: rgba(var(--gray-rgb), 0.06);
-
-    --button-primary-hover: #ccc;
-    --button-secondary-hover: #1a1a1a;
-  }
+.body { /*removes the white border al around the page */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.main {
+.container{
+  display: flex; /* Flexbox to align sections side by side */
+  flex-direction: row;
+  height: 100%; /* Full viewport height */
+  width: 100%; /* Full viewport width VVIMP TO SET UP*/
+
+  font-family: "Poppins", sans-serif;
+}
+
+/* Static Left Section */
+div.static {
+  width: 37%; /* Corresponds to the Bootstrap 'col-3' width */
+  height: 100%; /* Full height of the viewport */
+  overflow: hidden; /* Prevent scrolling on the left side */
+  /*z-index: 1000; /* Ensure it stays above the right section */
+  box-sizing: border-box;
+  border-right: 1px solid #CAD2C5;  
+
+  background-color: #354F52;
+
   display: flex;
   flex-direction: column;
-  gap: 32px;
-  grid-row-start: 2;
+  justify-content: space-between;
+
+  position:fixed;
+  /* if we put fixed here, we have to put margin-left in scrollable side, if we dont put position altogether, the left side wobbles */
+}
+.staticMainText{
+  margin:20% 10% 10% 10%;  /* top-right-bottom-left, like clockhands  */
+  line-height: 0.815rem;
 }
 
-.main ol {
-  font-family: var(--font-geist-mono);
-  padding-left: 0;
-  margin: 0;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: -0.01em;
-  list-style-position: inside;
+.staticMainIntro{
+  margin: 10%;
+  font-size: 1.5rem;
+  color: #CAD2C5;
 }
 
-.main li:not(:last-of-type) {
-  margin-bottom: 8px;
+.staticMainLinks{
+  margin:10%;
+  font-size: 1.5rem;
 }
 
-.main code {
-  font-family: inherit;
-  background: var(--gray-alpha-100);
-  padding: 2px 4px;
-  border-radius: 4px;
-  font-weight: 600;
-}
-
-.ctas {
-  display: flex;
-  gap: 16px;
-}
-
-.ctas a {
-  appearance: none;
-  border-radius: 128px;
-  height: 48px;
-  padding: 0 20px;
-  border: none;
-  border: 1px solid transparent;
-  transition: background 0.2s, color 0.2s, border-color 0.2s;
+.staticMainLinks a {
+  text-decoration: none; /*removes the underlines*/
   cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 500;
+  color: #CAD2C5;
 }
 
-a.primary {
-  background: var(--foreground);
-  color: var(--background);
-  gap: 8px;
+
+
+
+/* Scrollable Right Section */
+.scrollable {
+  margin-left:37%;
+  /* we dont need a margin-left, as it sets the beginning of the content of the scrollable side to a margin in the desired value*/
+  width: 63%;
+  height: 100%;
+  overflow-y: auto;
+  background-color: #2F3E46;
+  color: #ffffe4;
 }
 
-a.secondary {
-  border-color: var(--gray-alpha-200);
-  min-width: 180px;
-}
-
-.footer {
-  grid-row-start: 3;
-  display: flex;
-  gap: 24px;
-}
-
-.footer a {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.footer img {
-  flex-shrink: 0;
-}
-
-/* Enable hover only on non-touch devices */
-@media (hover: hover) and (pointer: fine) {
-  a.primary:hover {
-    background: var(--button-primary-hover);
-    border-color: transparent;
-  }
-
-  a.secondary:hover {
-    background: var(--button-secondary-hover);
-    border-color: transparent;
-  }
-
-  .footer a:hover {
-    text-decoration: underline;
-    text-underline-offset: 4px;
-  }
-}
-
-@media (max-width: 600px) {
-  .page {
-    padding: 32px;
-    padding-bottom: 80px;
-  }
-
-  .main {
-    align-items: center;
-  }
-
-  .main ol {
-    text-align: center;
-  }
-
-  .ctas {
-    flex-direction: column;
-  }
-
-  .ctas a {
-    font-size: 14px;
-    height: 40px;
-    padding: 0 16px;
-  }
-
-  a.secondary {
-    min-width: auto;
-  }
-
-  .footer {
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  .logo {
-    filter: invert();
-  }
+.socialLinks a{  /*important to put a in front */
+  text-decoration: none; /*removes the underlines*/
+  cursor: pointer;
+  /* color: ; */
 }
