@@ -25,32 +25,29 @@ div.static {
   height: 100%; /* Full height of the viewport */
   overflow: hidden; /* Prevent scrolling on the left side */
   /*z-index: 1000; /* Ensure it stays above the right section */
-  box-sizing: border-box;
   border-right: 1px solid #CAD2C5;  
-
   background-color: #354F52;
 
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  gap: 2vw;
 
   position:fixed;
   /* if we put fixed here, we have to put margin-left in scrollable side, if we dont put position altogether, the left side wobbles */
 }
 .staticMainText{
-  margin:20% 10% 10% 10%;  /* top-right-bottom-left, like clockhands  */
-  line-height: 0.815rem;
+  margin: 10vh 5vw 0 5vh;  /* top-right-bottom-left, like clockhands OR top, bottom  DO NOT CHANGE*/
+  line-height: 0.5;
 }
 
 .staticMainIntro{
-  margin: 10%;
-  font-size: 1.5rem;
-  color: #CAD2C5;
+  /* all css converted to inline */
 }
 
 .staticMainLinks{
-  margin:10%;
-  font-size: 1.5rem;
+  /* all css converted to inline */
 }
 
 .staticMainLinks a {
@@ -60,6 +57,18 @@ div.static {
 }
 
 
+
+.cedarville-cursive-regular {
+  font-family: "Cedarville Cursive", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.seaweed-script-regular {
+  font-family: "Seaweed Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
 
 
 /* Scrollable Right Section */
@@ -76,5 +85,10 @@ div.static {
 .socialLinks a{  /*important to put a in front */
   text-decoration: none; /*removes the underlines*/
   cursor: pointer;
-  /* color: ; */
+  color: #84A98C; /*need to define color here in order for it to transition*/
+  transition: color 0.3s ease;
+}
+
+.socialLinks a:hover {
+  color: #CAD2C5; /* Color on hover */
 }
