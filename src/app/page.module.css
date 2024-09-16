@@ -127,6 +127,22 @@
   overflow-y: auto;
   background-color: #2F3E46;
   color: #ffffe4;
+
+}
+
+.teachers{
+  font-family: "Teachers", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.scrollableWrapper{
+  width: calc(100% - 14vw); /* 50px margin on both left and right */
+  margin-left: 7vw;
+  margin-right: 7vw;
+  /* here we will use 100% of the static wrapper, 100vh would mean entire webpage */
+
 }
 
 .socialLinks a{  /*important to put a in front */

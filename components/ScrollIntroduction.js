@@ -10,13 +10,13 @@ const ScrollIntroduction = () => {
             flexDirection: 'column', 
             justifyContent: 'center',
             height: '100vh',
-            margin: '0 5%',
-            fontSize: '1.8vw',
-            fontWeight: '400',
+            fontSize: 'calc(0.87vh + 0.87vw)',
+            gap: 'calc(0.5vh + 2vw)',
+            fontFamily: '"Teachers", sans-serif'
           }}>
             <span style={{ display: 'block'}}>Being brought up in a house full of fabrics, designs, colors and patterns does something to you,</span>
-            <span style={{ display: 'block', marginTop: '1vw' }}> Something which makes you look at the whole world like its your canvas,</span>
-            <span style={{ display: 'block', marginTop: '1vw' }}>What better sign from the universe to turn the world a bit more aesthetic, one click at a time </span>
+            <span style={{ display: 'block'}}> Something which makes you look at the whole world like its your canvas,</span>
+            <span style={{ display: 'block'}}>What better sign from the universe to turn the world a bit more aesthetic, one click at a time </span>
     </section>
   );
 }

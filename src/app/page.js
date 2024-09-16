@@ -12,13 +12,14 @@ export default function Home() {
       <div className={styles.static}>
         <StaticOne />
       </div>
-      <div className={styles.scrollable}
-      style={{height: '100vh', overflowY: 'auto'}}>
+      <div className={styles.scrollable}>
+        <div className={styles.scrollableWrapper}>
             <ScrollIntroduction />
             <ScrollAreas />
             <ScrollProjects />
             <ScrollSkills />
             <ScrollSocial />
+          </div>
       </div>
   </div>
   );
