@@ -8,9 +8,8 @@ const ScrollSkills = () => {
             display: 'flex', 
             flexDirection: 'column',
             height: '100vh',
-            margin: '0 5%',
           }}>
-            <span style={{ fontSize: '3rem', fontWeight: 100}}>Skills I'm Adept With</span>
+            <span style={{ fontSize: '3.2rem', fontWeight: 100, marginTop: '4vh', fontFamily: '"Libre Caslon Text", serif'}}>Skills I'm Adept With</span>
             {/* BODY */}
           </section>
   );

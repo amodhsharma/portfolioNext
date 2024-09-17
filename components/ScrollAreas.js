@@ -8,9 +8,9 @@ const ScrollAreas = () => {
             display: 'flex', 
             flexDirection: 'column',
             height: '100vh',
-            margin: '0 5%',
           }}>
-            <span style={{ fontSize: '3rem', fontWeight: 100}}>Areas of Interest and Design Philosophy</span>
+            <span style={{ fontSize: '3.2rem', fontWeight: 100, marginTop: '4vh', fontFamily: '"Libre Caslon Text", serif'}}>Areas of Interest and Design Philosophy</span>
+            {/*margin top ensures that the text Areas of interest is displayed at a distance of 4 vw from top of section */}
             {/* BODY */}
     </section>
   );

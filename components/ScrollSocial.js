@@ -13,7 +13,6 @@ const ScrollSocial = () => {
               flexDirection: 'column', 
               justifyContent: 'center',
               height: '100vh',
-              margin: '0 5%',
             }}>
               <div className={styles.socialLinks}>
                 <span style={{ fontSize: '12.5rem', fontWeight: 400, display: 'block' }}><a href={`mailto:${Mail}`}>Mail</a></span>

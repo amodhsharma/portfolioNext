@@ -4,6 +4,14 @@
   font-family: "Poppins", sans-serif;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap');
+
+.libre-caslon-text-regular {
+  font-family: "Libre Caslon Text", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .container{
   display: flex; /* Flexbox to align sections side by side */
   flex-direction: row;
@@ -38,17 +46,17 @@
   margin-right: 3vw;
   /* here we will use 100% of the static wrapper, 100vh would mean entire webpage */
 
-  height: calc(100vh - 30vh);
+  height: calc(100vh - 6vh);
   /* make sure you use vh fpr height and there is space between the brackets and elements  */
-  margin-top: 15vh;
-  margin-bottom:15vh;
+  margin-top: 3vh;
+  margin-bottom:3vh;
   /* above make sure that the content is well fit between the left and right boundaries  */
   /* we wont take 100%, rather vh */
 
   display: flex;
   flex-direction: column;
   /* align-items: center; */
-  justify-content: space-between; /* Ensure equal space between items */
+  justify-content: space-around; /* Ensure equal space between items */
 
   box-sizing: border-box;
 }
@@ -61,37 +69,31 @@
 
 .amodh{
   line-height: 0.75;
-  color: #CAD2C5; 
-
-
-}
-/* 
-.amodhBlock {
-  display: block;
-  position: relative;
+  color: #CAD2C5;
 
 }
 
 .amodhLeft {
-  align-self: flex-start;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .amodhRight {
-  align-self: flex-end;
-} */
-
-
+  display: flex;
+  justify-content: flex-end;
+} 
+/* 
+amodhleft and amodh right ensure that 'amodh' is put in a flexbox and is aligned to the extreme left of the flexbox
+and 'sharma' is put in another flexbox and is aligned to the extreme right */
 
 .aboutAmodh{
   display: flex;
   flex-direction: column;
-
   justify-content: center;
-/* 
-  font-size: 1.25vw; */
   color: #CAD2C5;
-  /* margin: 5vw; */
-
+  font-family: "Libre Caslon Text", serif;
+  /* margin: 5vw;
+  font-size: 1.25vw; */
 
 }
 
@@ -118,7 +120,18 @@
 }
 
 
+.teachers{
+  font-family: "Teachers", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
 /* Scrollable Right Section */
+
+
+
+
 .scrollable {
   margin-left:30%;
   /* we dont need a margin-left, as it sets the beginning of the content of the scrollable side to a margin in the desired value*/
@@ -129,14 +142,6 @@
   color: #ffffe4;
 
 }
-
-.teachers{
-  font-family: "Teachers", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 200;
-  font-style: normal;
-}
-
 .scrollableWrapper{
   width: calc(100% - 14vw); /* 50px margin on both left and right */
   margin-left: 7vw;
