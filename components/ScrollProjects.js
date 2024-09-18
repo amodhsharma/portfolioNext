@@ -9,7 +9,7 @@ const ScrollProjects = () => {
       flexDirection: 'column',
       height: '100vh',
     }}>
-      <span style={{ fontSize: '3.2rem', fontWeight: 100, marginTop: '4vh', fontFamily: '"Libre Caslon Text", serif'}}>Projects I've Done</span>
+      <span style={{ fontSize: 'calc(2vw + 2vh)', fontWeight: 100, marginTop: '4vh', fontFamily: '"Libre Caslon Text", serif'}}>Projects I've Done</span>
       {/* BODY */}
     </section>
   );

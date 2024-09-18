@@ -1,3 +1,4 @@
+
 .html, .body{
   font-size: 16px;  /*hor helping inrem value*/
   margin: 0;
@@ -26,20 +27,39 @@
   width: 30%; /* Corresponds to the Bootstrap 'col-3' width */
   min-height: 100vh; /* Full height of the viewport */
   max-width: 100vw;
-
-
   border-right: 1px solid #CAD2C5;  
   border-width: thin;
   background-color: #354F52;
-
   overflow: hidden; /*necessary as if we dont have this then the content when zoomed a lot may come to scrollable side */
-
   position:fixed;
   /* if we put fixed here, we have to put margin-left in scrollable side, if we dont put position altogether, the left side wobbles */
 
 }
+.imageWrapper {
+  position: absolute; /* Ensure it stays behind text but above background color */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0; /* Ensure it is below the text but above the background color */
+}
+
+.backgroundImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.25; /* Adjust the transparency as needed */
+}
+
 
 .leftWrapper{
+
+  position: relative;
+  z-index: 1;
+  /* position and z-index ensures that .leftWrapper has position: relative and a higher z-index so that it stays above .imageWrapper.
+  The opacity on .backgroundImage affects only the image, not the text, due to proper z-index layering.
+   */
+
   /* holds all the content on the left static side */
   width: calc(100% - 6vw); /* 50px margin on both left and right */
   margin-left: 3vw;
@@ -59,6 +79,7 @@
   justify-content: space-around; /* Ensure equal space between items */
 
   box-sizing: border-box;
+
 }
 
 .tiro-devanagari-hindi-regular {
@@ -120,13 +141,6 @@ and 'sharma' is put in another flexbox and is aligned to the extreme right */
 }
 
 
-.teachers{
-  font-family: "Teachers", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 200;
-  font-style: normal;
-}
-
 /* Scrollable Right Section */
 
 
@@ -134,12 +148,14 @@ and 'sharma' is put in another flexbox and is aligned to the extreme right */
 
 .scrollable {
   margin-left:30%;
-  /* we dont need a margin-left, as it sets the beginning of the content of the scrollable side to a margin in the desired value*/
   width: 70%;
   height: 100%;
   overflow-y: auto;
+  overflow-x: hidden;
+  /* doesnt allow for left - right scrolling if any content gets out of proportion  */
   background-color: #2F3E46;
   color: #ffffe4;
+  scroll-behavior: smooth;
 
 }
 .scrollableWrapper{
@@ -150,6 +166,14 @@ and 'sharma' is put in another flexbox and is aligned to the extreme right */
 
 }
 
+.socialLinks{
+  display: flex;
+  flex-direction: column;
+  line-height: 0.85;
+  /* dont need margin top after this  */
+  font-size: calc(7vw + 7vh);
+  font-weight: 400;
+}
 .socialLinks a{  /*important to put a in front */
   text-decoration: none; /*removes the underlines*/
   cursor: pointer;
@@ -160,3 +184,19 @@ and 'sharma' is put in another flexbox and is aligned to the extreme right */
 .socialLinks a:hover {
   color: #CAD2C5; /* Color on hover */
 }
+
+.mail{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.instagram{
+  display: flex;
+  justify-content: center;
+}
+
+.twitter{
+  display: flex;
+  justify-content: flex-end;
+}
+

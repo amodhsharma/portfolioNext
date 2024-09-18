@@ -8,6 +8,7 @@ import ScrollSocial from "../../components/ScrollSocial";
 
 export default function Home() {
   return (
+    
     <div className={styles.container}>
       <div className={styles.static}>
         <StaticOne />

@@ -1,0 +1,66 @@
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    grid-template-rows: repeat(2, 200px);  /* 2 rows with fixed height */
+    gap: 10px;
+  }
+  
+  .gridItem1 {
+    grid-column: span 1;
+    grid-row: span 2; /* Item 1 takes 2 rows */
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .gridItem2 {
+    grid-column: span 1;
+    grid-row: span 2; /* Item 2 takes 2 rows */
+    background-color: #555;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .gridItem3, .gridItem4, .gridItem5 {
+    grid-column: span 1;
+    grid-row: span 1; /* These take 1x1 space */
+    background-color: #777;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .gridItem6 {
+    grid-column: span 1;
+    grid-row: span 2; /* Item 6 takes 2 rows */
+    background-color: #999;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .gridItem7 {
+    grid-column: span 1;
+    grid-row: span 2; /* Item 7 takes 2 rows */
+    background-color: #bbb;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .gridItem8 {
+    grid-column: span 1;
+    grid-row: span 1; /* Item 8 takes 1 row */
+    background-color: #ddd;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

@@ -1,9 +1,20 @@
-
+import Image from 'next/image'
+import texture1 from '../images/texture1.png'
+import texture2 from '../images/texture2.jpg'
 import styles from '../src/app/page.module.css';
+
 
 const StaticOne = () => {
     return(
         <div className={styles.left}>
+          <div className={styles.imageWrapper}>
+          <Image
+          src={texture2}
+          fill
+          objectFit="cover" 
+          className={styles.backgroundImage} 
+        />
+        </div>
            <div className={styles.leftWrapper}>
               <div className={styles.amodh}>
                 {/* <div className={styles.amodhBlock}> */}
