@@ -1,6 +1,6 @@
 import Image from 'next/image'
-import texture1 from '../images/texture1.png'
-import texture2 from '../images/texture2.jpg'
+import texture1 from '../public/ImagesBg/texture1.png';
+import texture2 from '../public/ImagesBg/texture2.jpg';
 import styles from '../src/app/page.module.css';
 
 
