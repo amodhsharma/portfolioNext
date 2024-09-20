@@ -11,7 +11,7 @@ const StaticOne = () => {
           <Image
           src={texture2}
           fill
-          objectFit="cover" 
+          priority={true}
           className={styles.backgroundImage} 
         />
         </div>
