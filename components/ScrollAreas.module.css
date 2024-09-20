@@ -1,0 +1,34 @@
+.MainAreas{
+    display: flex;
+    flex-direction: row;
+    /* side by side text like newspaper */
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    margin-top: 2rem;
+    
+}
+
+.MainAreas p{
+    text-align: justify;
+    font-size: calc(0.7vh + 0.7vw);
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    font-family: '"Libre Caslon Text", serif';
+}
+
+.MainAreasAreas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1.2vw;
+}
+
+.MainAreasPhilosophy{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1.2vw;
+}

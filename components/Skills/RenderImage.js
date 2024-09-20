@@ -8,7 +8,10 @@ const RenderImage = ({ images }) => {
         {images.map((img, index) => (
           <div key={index} className={styles.gridItem} >
               <div className={styles.imageWrapper}>
-                <Image src={img.src} alt={img.name} layout="responsive" width={150} /* Base width */ height={150} /* Base height *//>
+                <Image src={img.src} alt={img.name} width={150} /* Base width */ height={150} /* Base height */
+                priority={true} // This makes the image load with priority
+                placeholder="blur" // This enables the blur effect while the image is loading
+                blurDataURL="/images/placeholder-blur.png"/>
                 </div>     
                 <span className={styles.imageLabel}>{img.name}</span> {/* Floating name label */}  
           </div>
