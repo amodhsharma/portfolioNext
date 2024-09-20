@@ -4,7 +4,7 @@
     /* side by side text like newspaper */
     justify-content: center;
     align-items: flex-start;
-    height: 100vh;
+    /* height: 70vh; not needed */
     margin-top: 2rem;
     
 }
@@ -12,8 +12,8 @@
 .MainAreas p{
     text-align: justify;
     font-size: calc(0.7vh + 0.7vw);
-    margin-top: 2vh;
-    margin-bottom: 2vh;
+    margin-top: 1.15vh;
+    margin-bottom: 1.15vh;
     font-family: '"Libre Caslon Text", serif';
 }
 
