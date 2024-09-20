@@ -13,7 +13,7 @@
   /* align items and justify items cneter the elements centrally in horizontal and vertical positons  */
   
   grid-template-columns: repeat(5, 1fr); /* 5 columns, flexible width using 1fr */
-  grid-template-rows: repeat(3, 1fr); /* 3 columns, flexible width using 1fractional unit */
+  grid-template-rows: repeat(4, 1fr); /* 3 columns, flexible width using 1fractional unit */
   height: 60vh; /* Grid height fills the viewport */
   width: 100%;
   /* we dont need a width as it will automatically calculate, if we put a width, it will sometimes get out of the defined boundaries */

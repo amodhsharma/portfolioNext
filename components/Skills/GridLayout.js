@@ -1,7 +1,6 @@
 import React from 'react';
 import RenderImage from './RenderImage';
 import { IMAGE_DATA } from './images';
-import styles from './GridLayout.module.css'
 
 
 const GridLayout = () => {

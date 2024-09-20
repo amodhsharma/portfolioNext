@@ -15,6 +15,9 @@ export const IMAGE_DATA = [
     { name: 'React', src: '/imagesSkills/react.svg'},
     { name: 'Ruby', src: '/imagesSkills/ruby.svg'},
     { name: 'SQL', src: '/imagesSkills/sql.svg'},
-    // Add more images as needed
-
+    { name: 'Kubernetes', src: '/imagesSkills/kubernetes.svg'},
+    { name: 'Docker', src: '/imagesSkills/docker.svg'},
+    { name: 'Canva', src: '/imagesSkills/canva.svg'},
+    { name: 'Figma', src: '/imagesSkills/figma.svg'},
+    { name: 'TypeScript', src: '/imagesSkills/ts.svg'},
   ];
